@@ -1,16 +1,20 @@
 package in.regres.model;
 
-import java.util.List;
-
-/**
- * Created by Jay Vaghani
- */
 public class StudentPojo {
-    private String firstName;
     private String lastName;
     private String email;
-    private String programme;
-    private List<String> courses;
+    private String job;
+    private String firstName;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
 
     public String getFirstName() {
         return firstName;
@@ -36,20 +40,14 @@ public class StudentPojo {
         this.email = email;
     }
 
-    public String getProgramme() {
-        return programme;
+    public String getJob() {
+        return job;
     }
 
-    public void setProgramme(String programme) {
-        this.programme = programme;
+    public void setJob(String job) {
+        this.job = job;
     }
 
-    public List<String> getCourses() {
-        return courses;
-    }
 
-    public void setCourses(List<String> courses) {
-        this.courses = courses;
-    }
+
 }
-
